@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Made by Akshaan with Love</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .message {
+      font-size: 18px;
+      font-weight: bold; /* Make text bold */
+      margin-bottom: 10px;
+    }
+    .heart {
+      font-size: 24px;
+      color: red;
+      margin-bottom: 20px;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="message">Made by Akshaan with Love</div>
+  <div class="heart">❤️</div>
+  <button class="button" id="githubButton">Visit My GitHub</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Handle button click event
+      document.getElementById('githubButton').addEventListener('click', function() {
+        chrome.tabs.create({ url: 'https://github.com/akshaan-rajawat' });
+      });
+    });
+  </script>
+</body>
+</html>
