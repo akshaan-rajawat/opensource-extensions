@@ -1,2 +1,4 @@
 # opensource-extensions
-tiny opensource chrome extensions i made using some js knowledge and external tools
+
+<h2>Github Redirector</h2>
+<h3>redirects any user to my profile "akshaan-rajawat" whenever they open github.com on thier browser</h3>
